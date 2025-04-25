@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Hernandez">
+    <title>Carlos Hernandez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-grid"></div>
+    <svg class="noise-overlay" width="100%" height="100%">
+        <filter id="noise">
+            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch" />
+        </filter>
+        <rect width="100%" height="100%" filter="url(#noise)"></rect>
+    </svg>
+
+    <nav>
+        <div class="container">
+            <div class="nav-inner">
+                <a href="#home" class="nav-link">Inicio</a>
+                <a href="#aboutMe" class="nav-link">Sobre Mi</a>
+                <a href="#education" class="nav-link">Educación</a>
+                <a href="#projects" class="nav-link">Proyectos</a>
+                <a href="#contact" class="nav-link">Contactame</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="home">
+            <div class="info">
+                <h1 id="typed"></h1>
+                <p>Estudiante de Ingeniera de Software</p>
+                <div class="social-links">
+                    <a href="https://github.com/CarlosHa44" class="social-button">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/carlos-h-53b612313/" class="social-button">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="avatar">
+                <img src="img/me.png" alt="Carlos Hernández">
+            </div>
+        </section>
+        <section class="aboutMe" id="aboutMe">
+            <h2>Sobre Mi</h2>
+            <div class="education-card">
+                <div>
+                    <h3>Quién soy</h3>
+                    <p>
+                        Soy un estudiante ecuatoriano de Ingeniería de Software de 20 años, apasionado por la
+                        programación y las ciencias computacionales.
+                        Desde pequeño me ha fascinado entender cómo funcionan las cosas. Esa curiosidad innata me ha
+                        impulsado a buscar soluciones,
+                        hacer preguntas y ampliar constantemente mis conocimientos en herramientas y tecnologías del
+                        campo de la informática.
+                    </p><br>
+                    <h3>Mi filosofía</h3>
+                    <p>
+                        Creo en la mejora continua, en aprender de cada experiencia y en compartir el conocimiento. La
+                        tecnología no solo resuelve problemas;
+                        también nos conecta, nos inspira y nos da el poder de crear un futuro mejor para aquellos que
+                        cuentan
+                        con nosostros.
+                    </p><br>
+
+                </div>
+            </div>
+        </section>
+        <section id="education">
+            <h2>Educacion</h2>
+            <div class="education-card">
+                <div class="timeline-item">
+                    <div>
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">2022 - Presente</span>
+                        <h3>Universidad de las Fuerzas Armadas ESPE</h3>
+                        <p>Ingeniería en Software</p>
+                        <p>Actualmente estoy cursando el quinto semestre de la carrera de Ingeniera de Software y espero
+                            poder
+                            seguir aprendiendo a profundidad sobre el porque de las cosas y su aplicativo dentro del
+                            mundo real.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="img/escudo.png" alt="ESPE" width="170px" height="170px">
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div>
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-date">2019 - 2022</span>
+                        <h3>HOH Christian Academy</h3>
+                        <p>Bachillerato Unificado</p>
+                        <p>Curse mis estudios dentro de esta institucion con un formato de bilingue, esto ayudo a mi
+                            formacion
+                            profesional y me permitio mantener un dominio del ingles con una certificacion B2.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="img/escudoHoH.png" alt="HOH" width="170px" height="170px">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/helados.png" alt="Facturacion">
+                </div>
+                <div class="project-content">
+                    <h3>IceCream System</h3>
+                    <p>Sistema de facturacion dedicado a una empresa de venta y distribucion de helados al por mayor</p>
+                    <div class="project-tags">
+                        <span class="badge">JAVA</span>
+                        <div class="project-links">
+                            <a href="https://github.com/CarlosHa44/OOPSW14575-ERROR404" class="social-button">
+                                <i class="fab fa-github"></i>
+                                Ver en GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <div class="contact-card">
+                <div class="contact-methods">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Correo Electrónico</h3>
+                            <p>carlosha176@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+593 99 206 8023</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/CarlosHa44" target="_blank">github.com/CarlosHa44</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/carlos-h-53b612313/" target="_blank">linkedin.com/in/carlos-h</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Hecho por Carlos Hernandez</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
